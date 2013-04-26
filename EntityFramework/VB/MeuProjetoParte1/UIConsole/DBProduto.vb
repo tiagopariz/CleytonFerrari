@@ -5,6 +5,6 @@ Public Class DBProduto
 
     'Tabela
     Property Produtos As DbSet(Of Produto)
-    Property Categorias As DbSet(Of Categoria)
+
 
 End Class

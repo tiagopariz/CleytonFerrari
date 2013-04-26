@@ -1,6 +1,4 @@
-﻿Imports System.Data.Entity
-
-Public Class ProdutoAplicacao
+﻿Public Class ProdutoAplicacao
 
     Public Property banco As DBProduto
 
@@ -10,10 +8,6 @@ Public Class ProdutoAplicacao
 
     Public Sub Salvar(produto As Produto)
 
-        'banco.Produtos.Add(produto)
-        'banco.SaveChanges()
-
-        produto.Categoria = banco.Categorias.ToList().Where(Function(x) x.Id = produto.Categoria.Id).FirstOrDefault()
         banco.Produtos.Add(produto)
         banco.SaveChanges()
 
@@ -21,7 +15,7 @@ Public Class ProdutoAplicacao
 
     Public Function Listar() As IEnumerable(Of Produto)
 
-        Return banco.Produtos.Include(Function(x) x.Categoria).ToList()
+        Return banco.Produtos.ToList()
 
     End Function
 

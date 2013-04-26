@@ -2,6 +2,6 @@
 
     Public Property Id As Int32
     Public Property Nome As String
-    Public Property Categoria As Categoria
+    Public Property Categoria As String
 
 End Class

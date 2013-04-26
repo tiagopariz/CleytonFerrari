@@ -71,8 +71,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Categoria.vb" />
-    <Compile Include="CategoriaAplicacao.vb" />
     <Compile Include="DBProduto.vb" />
     <Compile Include="DBProdutoDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -87,10 +85,6 @@
       <DependentUpon>201304261554100_AdicionadoCategoria.vb</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201304261554100_AdicionadoCategoria.vb" />
-    <Compile Include="Migrations\201304261825233_RefatoradoCategoria.Designer.vb">
-      <DependentUpon>201304261825233_RefatoradoCategoria.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201304261825233_RefatoradoCategoria.vb" />
     <Compile Include="Migrations\Configuration.vb" />
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -117,9 +111,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201304261554100_AdicionadoCategoria.resx">
       <DependentUpon>201304261554100_AdicionadoCategoria.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201304261825233_RefatoradoCategoria.resx">
-      <DependentUpon>201304261825233_RefatoradoCategoria.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
