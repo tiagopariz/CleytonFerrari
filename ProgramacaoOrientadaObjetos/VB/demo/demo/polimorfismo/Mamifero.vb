@@ -1,5 +1,5 @@
 ﻿Public MustInherit Class Mamifero
 
-    Public MustOverride Sub AbMethod1()
+    Public MustOverride Sub Andar()
 
 End Class

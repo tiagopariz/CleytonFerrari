@@ -89,9 +89,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="polimorfismo2\Calcular.vb" />
+    <Compile Include="polimorfismo2\Operacao.vb" />
+    <Compile Include="polimorfismo2\Soma.vb" />
+    <Compile Include="polimorfismo2\Subtracao.vb" />
     <Compile Include="polimorfismo\Gorila.vb" />
     <Compile Include="polimorfismo\Leao.vb" />
     <Compile Include="polimorfismo\Mamifero.vb" />
+    <Compile Include="sobreposicao\Conta.vb" />
+    <Compile Include="sobreposicao\Corrente.vb" />
+    <Compile Include="sobreposicao\Poupanca.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">

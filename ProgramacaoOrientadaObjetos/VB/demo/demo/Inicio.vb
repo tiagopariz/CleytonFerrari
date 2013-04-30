@@ -1,4 +1,5 @@
-﻿Module Inicio
+﻿Imports Demo.Operacao
+Module Inicio
 
     Sub Main()
 
@@ -31,7 +32,21 @@
         'mi.Idade = 28
 
         ''Polimorfismo''
+        'Dim m1 As New Leao()
+        'Dim m1 As New Gorila()
+        'm1.Andar()
+        'Dim op As New Subtracao()
+        'Dim op As New Soma()
+        'Dim n1 As Double = 5, n2 = 5
+        'Dim c As New Calcular()
+        'c.MostrarResultado(op, n1, n2)
 
+        ''Sobreposição''
+        Dim p1 As New Poupanca
+        p1.Saque("88888-8", "1234-5", 100)
+
+        Dim c1 As New Corrente
+        c1.Saque("77777-7", "5432-1", 100)
 
         Console.ReadKey()
 
