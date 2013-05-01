@@ -1,4 +1,7 @@
-﻿Public Class CategoriaAplicacao
+﻿Imports Repositorio
+Imports Dominio
+
+Public Class CategoriaAplicacao
 
     Public Property banco As DBProduto
 

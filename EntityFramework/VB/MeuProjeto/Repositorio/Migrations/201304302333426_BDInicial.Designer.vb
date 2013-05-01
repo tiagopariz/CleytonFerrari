@@ -4,14 +4,14 @@ Imports System.Data.Entity.Migrations.Infrastructure
 Imports System.Resources
 
 Namespace Migrations
-    Public NotInheritable Partial Class InitialCreate
+    Public NotInheritable Partial Class BDInicial
         Implements IMigrationMetadata
     
-        Private ReadOnly Resources As New ResourceManager(GetType(InitialCreate))
+        Private ReadOnly Resources As New ResourceManager(GetType(BDInicial))
         
         Private ReadOnly Property IMigrationMetadata_Id() As String Implements IMigrationMetadata.Id
             Get
-                Return "201304261516110_InitialCreate"
+                Return "201304302333426_BDInicial"
             End Get
         End Property
         

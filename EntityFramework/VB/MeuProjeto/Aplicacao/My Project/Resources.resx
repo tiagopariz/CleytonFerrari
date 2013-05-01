@@ -46,7 +46,7 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
@@ -60,7 +60,6 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
@@ -69,10 +68,9 @@
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -87,10 +85,9 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -112,12 +109,9 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Target" xml:space="preserve">
-    <value>H4sIAAAAAAAEAM1WyW7bMBC9F+g/CDy1h5jOckgDOUFix4XR2g6iJHdaGjtEuagiZdjf1kM/qb/QobVasp00yKE3LrO8eXwc8s+v3/7VSgpvCYnhWvXIcadLPFChjrha9Ehq50fn5Ory4wf/NpIr76mwO3V26KlMjzxbG19QasJnkMx0JA8TbfTcdkItKYs0Pel2v9DjYwoYgmAsz/PvU2W5hM0Ep32tQohtysRYRyBMvo47wSaqN2ESTMxC6JHHEVobLYB414IzBBCAmBMvPrt4NBDYRKtFEDPLmXhYx4D7cyYM5HAv4rPXIu6eOMSUKaUthtPqTRWTshas5hartmsHa1NRj9wlOkqtrhuh2TdYby3gEhrGkNj1Pcxz11FEPLrtR5uOpVvNx2XHkbKnJ8SbpEKwmYCSJGQxsDqBr6AgYRaiO2YtJMr5wgZ9K2sjx0RLKLLgaaCOiDfkK4i+g1rY5zLTmK2KFRwS71FxlB062SSFOrJsXk/q04rINr0oD8s4ws8BDW52s5xZB2C3z8IQr4qeiatTBNiJosxXqZZmsi3kTffo2x+zOEaCanrPV7wgE3v/KPh31cksBg3NDvGVaMtMeNxsAY1dTI1IhzwxdsAsmzF3ZP1ItsxeZLfI0yC5KfCK88LBjTOn8sp3duaqEzfEWiQKdVMWlCD23LTcNwiZYMmOu9LXIpVq33075J3dgrp/ttKO4NMG9CYztEVN49Y3qT6k0aZJmb3UakOTfq6PlxtzSzCZCfGQmiWPnFiCtbEgO86gE/wUfcGx3spgzBSfg7EP+gdgx0E9nzea/BsaMDUmEv9pF+au+hf7batJv74BqyVLwmeWfJJs9fk9m2q7O7yquR7qrZlceiSa4eQhg5lvgnlz623L16f134c/AMMXVQj3F1EQuve+ClrYjNRcF2xjbXVEhUnjMMZgWYQUXSeWz1locTsEYzav4hMTKZrcyhlEIzVNbZzaa2NAzsTWK+vTw/k378s2Zn8au5l5jxIQJscSYKpuUi6iEvewLcZ9IZxacoUjKvwVYLjFuow00eqVgXL6BhCDcvfjAWQsMJiZqoAtYT+2lzncZswfcLZImDR5jMrffYap+w1f/gXLJukTPwsAAA==</value>
-  </data>
 </root>

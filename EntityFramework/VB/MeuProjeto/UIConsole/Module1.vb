@@ -1,4 +1,6 @@
 ﻿Imports System.Collections.Generic
+Imports Aplicacao
+Imports Dominio
 
 Module Module1
 
@@ -52,27 +54,61 @@ Module Module1
         'Next
 
         '''''''''AULA 03'''''''''''
-        Dim appLista As New ListaDeProdutoAplicacao
-        Dim appProduto As New ProdutoAplicacao
+        'Dim appLista As New ListaDeProdutoAplicacao
+        'Dim appProduto As New ProdutoAplicacao
 
-        Dim lista01 = appLista.Listar().LastOrDefault()  'Where(Function(x) x.Id = 1).FirstOrDefault()  'As New ListaDeProduto()
-        lista01.Descricao = "Cesta Basica de Rico"
-        lista01.Produtos = appProduto.Listar().ToList() '.Where(Function(x) x.Categoria.Id = 2).ToList()
+        'Dim lista01 = appLista.Listar().LastOrDefault()  'Where(Function(x) x.Id = 1).FirstOrDefault()  'As New ListaDeProduto()
+        'lista01.Descricao = "Cesta Basica de Rico"
+        'lista01.Produtos = appProduto.Listar().ToList() '.Where(Function(x) x.Categoria.Id = 2).ToList()
 
-        'appLista.Salvar(lista01)
-        'appLista.Alterar(lista01)
-        appLista.Excluir(lista01.Id)
+        ''appLista.Salvar(lista01)
+        ''appLista.Alterar(lista01)
+        'appLista.Excluir(lista01.Id)
 
+        'Dim listas = appLista.Listar()
+
+        'For Each lista In listas
+        '    Console.WriteLine("{0} - {1}", lista.Id, lista.Descricao)
+        '    For Each Produto In lista.Produtos
+        '        Console.WriteLine("     {0} - {1}", Produto.Id, Produto.Nome)
+        '    Next
+        'Next
+
+        '''''''''AULA 04'''''''''''
+        Dim appCategoria As New CategoriaAplicacao()
+        'Dim objCategoria As New Categoria() With {.Descricao = "Enlatados"}
+        'appCategoria.Salvar(objCategoria)
+        'Dim listaDeCategorias = appCategoria.Listar()
+        'For Each listaDeCategoria In listaDeCategorias
+        '    Console.WriteLine("{0}", listaDeCategoria.Descricao)
+        'Next
+
+        'Produto
+        Dim appProduto As New ProdutoAplicacao()
+        'Dim objProduto As New Produto() With {.Nome = "Sardinha",
+        '                                      .Categoria = appCategoria.Listar().FirstOrDefault()}
+        'appProduto.Salvar(objProduto)
+        'Dim listaDeProdutos = appProduto.Listar()
+        'For Each ListaDeProduto In listaDeProdutos
+        '    Console.WriteLine("{0} - {1}",
+        '                      ListaDeProduto.Nome,
+        '                      ListaDeProduto.Categoria.Descricao)
+        'Next
+
+        'Lista de produtos
+        Dim appLista As New ListaDeProdutoAplicacao()
+        Dim objListaProdutos As New ListaDeProduto() With {.Descricao = "Lista de Compras do Cleyton"}
+        Dim produto1 = appProduto.Listar().FirstOrDefault()
+        objListaProdutos.Produtos = New List(Of Produto)
+        objListaProdutos.Produtos.Add(produto1)
+        appLista.Salvar(objListaProdutos)
         Dim listas = appLista.Listar()
-
-        For Each lista In listas
-            Console.WriteLine("{0} - {1}", lista.Id, lista.Descricao)
-            For Each Produto In lista.Produtos
-                Console.WriteLine("     {0} - {1}", Produto.Id, Produto.Nome)
+        For Each listaDeProduto In listas
+            Console.WriteLine("{0}", listaDeProduto.Descricao)
+            For Each produto In listaDeProduto.Produtos
+                Console.WriteLine("     {0} - {1}", produto.Nome, produto.Categoria.Descricao)
             Next
         Next
-
-
         Console.ReadKey()
 
     End Sub
