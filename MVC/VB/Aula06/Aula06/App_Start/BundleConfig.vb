@@ -4,6 +4,10 @@ Imports System.Web.Optimization
 Public Class BundleConfig
     ' For more information on Bundling, visit http://go.microsoft.com/fwlink/?LinkId=254725
     Public Shared Sub RegisterBundles(ByVal bundles As BundleCollection)
+
+        'Habilitar otimização ou no Web.Config (compilation debug="true")
+        BundleTable.EnableOptimizations = False
+
         bundles.Add(New ScriptBundle("~/bundles/jquery").Include(
                    "~/Scripts/jquery-{version}.js"))
 
